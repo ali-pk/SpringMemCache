@@ -1,0 +1,20 @@
+<hazelcast xmlns="http://www.hazelcast.com/schema/config"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.hazelcast.com/schema/config
+           https://www.hazelcast.com/schema/config/hazelcast-config-5.2.xsd">
+    <network>
+<!--        <port auto-increment="true" port-count="10">5701</port>-->
+        <join>
+            <multicast enabled="true"/>
+                        <tcp-ip enabled="false"/>
+                        <aws enabled="false"/>
+        </join>
+        <memcache-protocol enabled="true"/>
+    </network>
+<!--        <advanced-network>-->
+<!--            <memcache-server-socket-endpoint-config name="memcache">-->
+<!--                <port auto-increment="false" port-count="10">11211</port>-->
+<!--            </memcache-server-socket-endpoint-config>-->
+<!--        </advanced-network>-->
+</hazelcast>
+
